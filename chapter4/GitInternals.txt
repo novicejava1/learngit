@@ -1,2 +1,2 @@
 GitInternals
-This is an update to same file on master branch
+This is an update to same file with conflict resolved
