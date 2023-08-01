@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: execute bash script
-        run: echo ${{ github.workspace }}/hello-runner.sh $language $message
+        run: ${{ github.workspace }}/hello-runner.sh $language $message
         env:
           language: "bash"
           message: "Hello GitHub Actions!!"
