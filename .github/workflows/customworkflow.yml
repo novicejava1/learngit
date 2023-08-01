@@ -5,6 +5,8 @@ jobs:
   Explore-GitHub-Actions-Custom-Workflow:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
       - name: execute bash script
         run: ${{ github.workspace }}/hello-runner.sh $language $message
         env:
