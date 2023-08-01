@@ -1,0 +1,12 @@
+name: GitHub Actions Custom Workflow Demo
+run-name: ${{ github.actor }} is testing out GitHub Actiions Custom Workflow 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions-Custom-Workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: execute bash script
+        run: echo ${{ github.workspace }}/hello-runner.sh ${{ language }} ${{ message }}
+        env:
+          language: "bash"
+          message: "Hello GitHub Actions!!"
