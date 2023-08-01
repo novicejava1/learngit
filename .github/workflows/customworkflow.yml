@@ -8,7 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - name: execute bash script
-        run: ${{ github.workspace }}/hello-runner.sh $language $message
+        run: ${{ github.workspace }}/hello-runner.sh \"$language\" \"$message\"
         env:
-          language: "bash"
-          message: "Hello GitHub Actions!!"
+          language: bash
+          message: Hello GitHub Actions!!
