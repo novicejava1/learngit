@@ -11,4 +11,4 @@ jobs:
         run: ${{ github.workspace }}/hello-runner.sh "$language" "$message"
         env:
           language: bash
-          message: Hello GitHub Actions!!
+          message: Hello GitHub Actions Workflow!!
