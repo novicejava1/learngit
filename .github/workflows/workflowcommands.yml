@@ -1,0 +1,9 @@
+name: GitHub Workflow Commands Demo
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Workflow-Commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create annotation for build error
+        run: echo "::error file=app.js,line=1::Missing semicolon"
