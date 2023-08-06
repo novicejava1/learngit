@@ -13,3 +13,5 @@ jobs:
         run: echo "::warning file=hello-runner.sh,line=1,endLine=7,title=hello-runner::shebang line"
       - name: Masking a Secret value
         run: echo "::add-mask::${{ runner.os }}"
+      - name: Masking a Secret value
+        run: echo "::add-mask::Mona The Octocat"
