@@ -11,3 +11,5 @@ jobs:
         run: echo "::notice file=hello-runner.sh,line=1,endLine=7,title=hello-runner::shebang line"
       - name: Create a warning message
         run: echo "::warning file=hello-runner.sh,line=1,endLine=7,title=hello-runner::shebang line"
+      - name: Masking a Secret value
+        run: echo "::add-mask::${{ runner.os }}"
