@@ -9,3 +9,5 @@ jobs:
         run: echo "::error file=app.js,line=1::Missing semicolon"
       - name: Create a notification message
         run: echo "::notice file=hello-runner.sh,line=1,endLine=7,title=hello-runner::shebang line"
+      - name: Create a warning message
+        run: echo "::warning file=hello-runner.sh,line=1,endLine=7,title=hello-runner::shebang line"
