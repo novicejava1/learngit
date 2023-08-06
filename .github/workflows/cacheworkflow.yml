@@ -10,7 +10,7 @@ jobs:
         id: cache-python
         uses: actions/cache@v3
         with:
-          # npm cache files are stored in `~/.npm` on Linux/macOS
+          # pip cache files are stored in `~/.cache/pip`
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
