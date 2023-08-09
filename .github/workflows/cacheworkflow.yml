@@ -22,4 +22,4 @@ jobs:
         run: pip install -r ./requirements.txt
 
       - name: List pip packages
-        run: echo "Cache Hit Status - ${{ steps.cache-python.outputs.cache-hit }}"; pip list packages
+        run: echo "Cache Hit Statussss - ${{ steps.cache-python.outputs.cache-hit }}"; pip list packages
